@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rock_paper_scissors/screens/player_screen.dart';
+import 'package:rock_paper_scissors/screens/home_screen.dart';
 import 'package:rock_paper_scissors/screens/registeration.dart';
 
 class LogIn extends StatefulWidget{
@@ -76,7 +76,7 @@ class _LogInState extends State<LogIn>{
                       onPressed: () {
                         if (_formKey.currentState!.validate()) {
                           Navigator.pushReplacement(context,
-                              MaterialPageRoute(builder: (context) => PlayerScreen()));
+                              MaterialPageRoute(builder: (context) => HomeScreen()));
                         }
                       },
                       child: const Text('LogIn'))
